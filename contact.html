@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Maurifil LTD</title>
+  <meta name="description" content="Get in touch with Maurifil LTD, your trusted yarn dyeing factory in Mauritius.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="font/fonts.css">
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container flex">
+      <a href="index.html" class="site-brand">
+        <img src="images/MAURIFIL LTD logo png-01.png" alt="Maurifil ltd" class="logo">
+      </a>
+      <button type="button" id="navbar-show-btn" class="flex"><i class="fas fa-bars"></i></button>
+      <div id="navbar-collapse">
+        <button type="button" id="navbar-close-btn" class="flex"><i class="fas fa-times"></i></button>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- header -->
+  <header class="flex">
+    <video autoplay muted loop playsinline id="bgVideo">
+      <source src="videos/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+    <div class="header-content">
+      <div class="container">
+        <div class="header-title">
+          <h1>Contact Maurifil LTD</h1>
+          <p>We’re here to support your textile needs</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- contact section -->
+  <section id="contact" class="contact-section py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">get in touch with us</span>
+        <h2 class="lg-title">Contact Us</h2>
+      </div>
+
+      <div class="contact-row">
+        <!-- contact form -->
+        <div class="contact-left">
+          <form class="contact-form">
+            <label>Name <span>(required)</span></label>
+            <div class="name-fields">
+              <input type="text" placeholder="First Name" required>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <label>Email <span>(required)</span></label>
+            <input type="email" placeholder="Your Email" required>
+            <div class="checkbox">
+              <input type="checkbox" id="news">
+              <label for="news">Sign up for Maurifil news and updates</label>
+            </div>
+
+            <label>Phone <span>(required)</span></label>
+            <input type="tel" placeholder="Your Phone Number" required>
+
+            <label>Message</label>
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- company contact info -->
+        <div class="contact-right my-2">
+          <div class="contact-item">
+            <span class="contact-icon flex"><i class="fa fa-phone-alt"></i></span>
+            <div>
+              <span>Phone</span>
+              <p class="text">+230 123 4567</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon flex"><i class="fa fa-map-marked-alt"></i></span>
+            <div>
+              <span>Address</span>
+              <p class="text">Maurifil LTD, Industrial Zone, Port Louis, Mauritius</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon flex"><i class="fa fa-envelope"></i></span>
+            <div>
+              <span>Email</span>
+              <p class="text">info@maurifil.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- footer -->
+  <footer class="py-4">
+    <div class="container footer-row">
+      <div class="footer-item">
+        <a href="index.html" class="site-brand">
+          Maurifil<span> LTD</span>
+        </a>
+        <p class="text">Maurifil LTD is a trusted yarn dyeing factory in Mauritius, delivering premium threads and eco-friendly yarns with a focus on sustainability and quality service.</p>
+      </div>
+
+      <div class="footer-item">
+        <h2>Follow us on:</h2>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="product.html">Our Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="subscribe-form footer-item">
+        <h2>Subscribe for Updates!</h2>
+        <form class="flex">
+          <input type="email" placeholder="Enter Email" class="form-control">
+          <input type="submit" class="btn" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- js -->
+  <script src="js/script.js"></script>
+</body>
+</html>

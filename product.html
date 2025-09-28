@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Maurifil LTD - Products</title>
+  <meta name="description" content="Explore Maurifil LTD products: premium dyed threads, eco yarns, and custom textile solutions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+  <!-- custom fonts & css -->
+  <link rel="stylesheet" href="font/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    /* Color Picker CSS */
+    .color-picker {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .color-picker button {
+      padding: 8px 12px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    .color-popup {
+      display: none; /* hidden by default */
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      width: 300px;
+      max-height: 300px;
+      overflow: auto;
+      display: grid; /* grid layout for swatches */
+      grid-template-columns: repeat(15, 20px);
+      gap: 2px;
+      z-index: 1000;
+    }
+    .color-swatch {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+    }
+    .color-swatch:hover {
+      border: 2px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+   <nav class="navbar">
+    <div class="container flex">
+      <a href="index.html" class="site-brand">
+        <img src="images/MAURIFIL LTD logo png-01.png" alt="Maurifil ltd" class="logo">
+      </a>
+      <button type="button" id="navbar-show-btn" class="flex"><i class="fas fa-bars"></i></button>
+      <div id="navbar-collapse">
+        <button type="button" id="navbar-close-btn" class="flex"><i class="fas fa-times"></i></button>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="flex">
+    <video autoplay muted loop playsinline id="bgVideo">
+      <source src="videos/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+    <div class="header-content">
+      <div class="container">
+        <div class="header-title">
+          <h1>Our Products</h1>
+          <p>Premium dyed threads, eco yarns, and custom textile solutions.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar container">
+    <button class="filter-btn active" onclick="filterProducts('all')">All</button>
+    <button class="filter-btn" onclick="filterProducts('threads')">Threads</button>
+    <button class="filter-btn" onclick="filterProducts('yarns')">Yarns</button>
+    <button class="filter-btn" onclick="filterProducts('custom')">Custom Orders</button>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid container">
+
+    <!-- Threads -->
+    <div class="product-card threads">
+      <img src="assets/thread1.jpg" alt="Dyed Threads">
+      <h3>Dyed Threads</h3>
+      <p>High-quality sustainable threads in vibrant colors.</p>
+
+      <div class="color-picker">
+        <button type="button" class="colorBtn">Select Your Color</button>
+        <div class="color-popup"></div>
+        <input type="hidden" class="selectedColor" name="color">
+      </div>
+
+      <form action="order.php" method="POST">
+        <input type="hidden" name="product" value="Dyed Threads">
+        <input type="number" name="quantity" placeholder="Quantity" required>
+        <input type="text" name="customer" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="btn">Order Now</button>
+      </form>
+    </div>
+
+    <!-- Yarns -->
+    <div class="product-card yarns">
+      <img src="assets/thread2.jpg" alt="Eco Yarns">
+      <h3>Dyed Yarns</h3>
+      <p>Biodegradable fibers made with environmental care.</p>
+
+      <div class="color-picker">
+        <button type="button" class="colorBtn">Select Your Color</button>
+        <div class="color-popup"></div>
+        <input type="hidden" class="selectedColor" name="color">
+      </div>
+
+      <form action="order.php" method="POST">
+        <input type="hidden" name="product" value="Eco Yarns">
+        <input type="number" name="quantity" placeholder="Quantity" required>
+        <input type="text" name="customer" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="btn">Order Now</button>
+      </form>
+    </div>
+
+    <!-- Custom -->
+    <div class="product-card custom">
+      <img src="assets/thread3.jpg" alt="Custom Orders">
+      <h3>Eco Dye</h3>
+      <p>Tailored textile solutions for industrial and fashion clients.</p>
+
+      <div class="color-picker">
+        <button type="button" class="colorBtn">Select Your Color</button>
+        <div class="color-popup"></div>
+        <input type="hidden" class="selectedColor" name="color">
+      </div>
+
+      <form action="order.php" method="POST">
+        <input type="hidden" name="product" value="Custom Orders">
+        <input type="number" name="quantity" placeholder="Quantity" required>
+        <input type="text" name="customer" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="btn">Order Now</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container footer-row">
+      <div class="footer-item">
+        <a href="index.html" class="site-brand">Maurifil<span> LTD</span></a>
+        <p class="text">Maurifil LTD provides premium dyed threads and eco-friendly yarns, trusted by industries for quality, sustainability, and innovation.</p>
+      </div>
+      <div class="footer-item">
+        <h2>Follow us on:</h2>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="product.html">Our Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="subscribe-form footer-item">
+        <h2>Subscribe for Updates!</h2>
+        <form class="flex">
+          <input type="email" placeholder="Enter Email" class="form-control">
+          <input type="submit" class="btn" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Product Filter
+    function filterProducts(category) {
+      const products = document.querySelectorAll('.product-card');
+      products.forEach(product => {
+        if(category === 'all' || product.classList.contains(category)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+
+    // Color Picker Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const steps = [0, 36, 73, 109, 146, 182, 219, 255];
+      const colors = [];
+      steps.forEach(r => steps.forEach(g => steps.forEach(b => colors.push(`rgb(${r},${g},${b})`))));
+
+      document.querySelectorAll('.color-picker').forEach(picker => {
+        const btn = picker.querySelector('.colorBtn');
+        const popup = picker.querySelector('.color-popup');
+        const hiddenInput = picker.querySelector('.selectedColor');
+
+        // Populate swatches
+        colors.forEach(color => {
+          const swatch = document.createElement('span');
+          swatch.className = 'color-swatch';
+          swatch.style.backgroundColor = color;
+          swatch.title = color;
+          swatch.addEventListener('click', () => {
+            hiddenInput.value = color;
+            btn.style.backgroundColor = color;
+            popup.style.display = 'none';
+          });
+          popup.appendChild(swatch);
+        });
+
+        // Toggle popup
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          popup.style.display = (popup.style.display === 'grid') ? 'none' : 'grid';
+        });
+      });
+
+      // Close all popups if clicked outside
+      document.addEventListener('click', () => {
+        document.querySelectorAll('.color-popup').forEach(popup => popup.style.display = 'none');
+      });
+    });
+  </script>
+</body>
+</html>

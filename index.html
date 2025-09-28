@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Maurifil LTD</title>
+  <meta name="description" content="Maurifil LTD - Trusted yarn dyeing factory in Mauritius providing dyed threads, eco yarns, and sustainable textile solutions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="font/fonts.css">
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container flex">
+      <a href="index.html" class="site-brand">
+        <img src="images/MAURIFIL LTD logo png-01.png" alt="Maurifil ltd" class="logo">
+      </a>
+      <button type="button" id="navbar-show-btn" class="flex"><i class="fas fa-bars"></i></button>
+      <div id="navbar-collapse">
+        <button type="button" id="navbar-close-btn" class="flex"><i class="fas fa-times"></i></button>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- header -->
+  <header class="flex">
+    <video autoplay muted loop playsinline id="bgVideo">
+      <source src="videos/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+    <div class="header-content">
+      <div class="container">
+        <div class="header-title">
+          <h1>Maurifil</h1>
+          <p>We Dye Threads, You Weave Dreams</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- about/intro -->
+  <div class="about-row">
+    <div class="about-left my-2">
+      <img src="images/scientific-petri-dish-holding-substance-filled-with-bacteria.jpg" alt="about img">
+    </div>
+    <div class="about-right">
+      <h2>About Maurifil</h2>
+      <p class="text">For top-notch dyeing, fast delivery, and friendly service, you can’t beat Maurifil.</p>
+    </div>
+  </div>
+
+  <!-- services section -->
+  <section id="services" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <h2 class="lg-title">Get to know us</h2>
+      </div>
+
+      <div class="services-row">
+        <div class="services-item">
+          <span class="services-icon">
+            <img src="images/colorful-yarn-bins-textile-factory.jpg" alt="factory" />
+          </span>
+          <h3>Who we are</h3>
+          <p class="text">
+            A trusted brand in the Mauritian textile industry, Maurifil delivers excellent colour, sustainable solutions, and reliable service without sacrificing deadlines.
+          </p>
+          <a href="about.html" class="btn">View more</a>
+        </div>
+
+        <div class="services-item">
+          <span class="services-icon">
+            <img src="images/close-up-image-lot-coils-with-threads-sewing-workshop.jpg" alt="factory" />
+          </span>
+          <h3>What we do</h3>
+          <p class="text">
+            We provide commission-based package dyeing at our fully equipped dyehouse, alongside free colour matching in our state-of-the-art laboratory.
+          </p>
+          <a href="product.html" class="btn">View more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end services section -->
+
+  <!-- testimonials -->
+  <section id="testimonials" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">what our clients say about us</span>
+        <h2 class="lg-title">Testimonials</h2>
+      </div>
+
+      <div class="test-row">
+        <div class="test-item">
+          <p class="text">Maurifil has consistently delivered premium-quality threads that never disappoint. Their commitment to sustainability and innovation is inspiring.</p>
+          <div class="test-item-info">
+            <img src="images/kevin jean.jpg" alt="testimonial">
+            <div><h3>Kevin Jean</h3></div>
+          </div>
+        </div>
+
+        <div class="test-item">
+          <p class="text">We’ve been working with Maurifil for years. Their yarns are durable, vibrant, and eco-friendly — perfect for our textile production needs.</p>
+          <div class="test-item-info">
+            <img src="images/David Mootoo.jpg" alt="testimonial">
+            <div><h3>David Mootoo</h3></div>
+          </div>
+        </div>
+
+        <div class="test-item">
+          <p class="text">The level of professionalism and care Maurifil puts into every order is unmatched. They are true partners in our success.</p>
+          <div class="test-item-info">
+            <img src="images/emily yang.jpg" alt="testimonial">
+            <div><h3>Emily Yang</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end testimonials -->
+
+  <!-- video -->
+  <section id="video">
+    <div class="video-wrapper flex">
+      <video loop>
+        <source src="videos/plant.mp4" type="video/mp4">
+      </video>
+      <button type="button" id="play-btn"><i class="fas fa-play"></i></button>
+    </div>
+  </section>
+  <!-- end video -->
+
+  <!-- contact (inline form on homepage) -->
+  <div class="contact-section">
+    <form class="contact-form">
+      <h2>Get in touch</h2>
+      <label>Name <span>(required)</span></label>
+      <div class="name-fields">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+
+      <label>Email <span>(required)</span></label>
+      <input type="email" placeholder="Your Email" required>
+      <div class="checkbox">
+        <input type="checkbox" id="news">
+        <label for="news">Sign up for Maurifil news and updates</label>
+      </div>
+
+      <label>Phone <span>(required)</span></label>
+      <input type="tel" placeholder="Your Phone Number" required>
+
+      <label>Message</label>
+      <textarea placeholder="Your Message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- end contact -->
+
+  <!-- footer -->
+  <footer class="py-4">
+    <div class="container footer-row">
+      <div class="footer-item">
+        <a href="index.html" class="site-brand">Maurifil<span> LTD</span></a>
+        <p class="text">Maurifil LTD is a trusted yarn dyeing factory in Mauritius, delivering premium dyed threads and eco-friendly yarns with a focus on sustainability and innovation.</p>
+      </div>
+
+      <div class="footer-item">
+        <h2>Follow us on:</h2>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="product.html">Our Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="subscribe-form footer-item">
+        <h2>Subscribe for Updates!</h2>
+        <form class="flex">
+          <input type="email" placeholder="Enter Email" class="form-control">
+          <input type="submit" class="btn" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- js -->
+  <script src="js/script.js"></script>
+  <script>
+    // play/pause video
+    let video = document.querySelector('.video-wrapper video');
+    document.getElementById('play-btn').addEventListener('click', () => {
+      if(video.paused){
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script>
+</body>
+</html>
